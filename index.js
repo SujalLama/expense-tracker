@@ -28,14 +28,6 @@ app.get('/', (req, res) => {
 // middleware to serve static files
 app.use(express.static(path.join(__dirname, './files')));
 
-// if(process.env.NODE_SERVER === 'production') {
-//     app.use(express.static(path.join(__dirname, "/client/build")));
-
-//     app.get('*', (req, res) => {
-//         res.sendFile(path.resolve(__dirname, 'client/build/index.html'));
-//     });
-// }
-
 const PORT = process.env.PORT || 5000;
 
 connectDB();
