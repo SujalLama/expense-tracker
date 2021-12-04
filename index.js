@@ -21,6 +21,9 @@ app.use(helmet());
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/expenses', expenseRoutes);
+app.get('/', (req, res) => {
+    res.send('Welcome to expense-tracker api.')
+});
 
 // middleware to serve static files
 app.use(express.static(path.join(__dirname, './files')));
