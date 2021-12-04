@@ -179,7 +179,7 @@ export default function Expenses() {
             expandIcon={<Edit />}
           >
             <div className={classes.info}>
-                <Typography className={classes.amount}>$ {expense.amount}</Typography><Divider style={{marginTop: 4, marginBottom: 4}}/>
+                <Typography className={classes.amount}>Rs. {expense.amount}</Typography><Divider style={{marginTop: 4, marginBottom: 4}}/>
                 <Typography>
                     {expense.category}
                 </Typography>
@@ -196,7 +196,7 @@ export default function Expenses() {
           <ExpansionPanelDetails style={{display: 'block'}}>
           <div>
               <TextField label="Title" className={classes.textField} value={expense.title} onChange={handleChange('title', index)} margin="normal"/>
-             <TextField label="Amount ($)" className={classes.textField} value={expense.amount} onChange={handleChange('amount', index)} margin="normal" type="number"/>
+             <TextField label="Amount (Rs.)" className={classes.textField} value={expense.amount} onChange={handleChange('amount', index)} margin="normal" type="number"/>
           </div>
           <div>
           <MuiPickersUtilsProvider utils={DateFnsUtils}>

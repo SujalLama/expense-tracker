@@ -96,7 +96,7 @@ export default function NewExpense() {
           </Typography>
           <br/>
           <TextField id="title" label="Title" className={classes.textField} value={values.title} onChange={handleChange('title')} margin="normal"/><br/>
-          <TextField id="amount" label="Amount ($)" className={classes.textField} value={values.amount} onChange={handleChange('amount')} margin="normal" type="number"/><br/>
+          <TextField id="amount" label="Amount (Rs.)" className={classes.textField} value={values.amount} onChange={handleChange('amount')} margin="normal" type="number"/><br/>
           
           <TextField id="category" label="Category" className={classes.textField} value={values.category} onChange={handleChange('category')} margin="normal"/><br/>
           <br/>
